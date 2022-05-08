@@ -81,8 +81,6 @@ tolerations: []
 
 affinity: {}
 
-configRef: {}
-
 config: 
   values: {}
 

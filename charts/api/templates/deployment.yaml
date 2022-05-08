@@ -1,7 +1,8 @@
+{{- $type := include "api.fullname" . }}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "api.fullname" . }}
+  name: {{ $type }}
   labels:
     {{- include "api.labels" . | nindent 4 }}
 spec:
@@ -47,9 +48,22 @@ spec:
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-      {{- if .Values.configRef }}
+      {{- if or (.Values.config.values) (.Values.secret.values) }}
           env:
-          {{- toYaml .Values.configRef | nindent 12 }}        
+          {{- range $k, $v := .Values.config.values }}
+          - name: {{ $k }}
+            valueFrom:
+              configMapKeyRef:
+                name: {{ $type }}
+                key: {{ $k }}
+          {{- end }}
+          {{- range $k, $v := .Values.secret.values }}
+          - name: {{ $k }}
+            valueFrom:
+              secretKeyRef:
+                name: {{ $type }}
+                key: {{ $k }}
+          {{- end }}
       {{- end }}            
       {{- with .Values.nodeSelector }}
       nodeSelector:
