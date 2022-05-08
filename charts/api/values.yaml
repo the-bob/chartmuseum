@@ -82,3 +82,10 @@ tolerations: []
 affinity: {}
 
 configRef: {}
+
+config: 
+  values: {}
+
+secret:
+  type: Opaque
+  values: {}
