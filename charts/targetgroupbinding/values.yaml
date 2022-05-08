@@ -1,0 +1,10 @@
+nameOverride: "aws-tgb"
+fullnameOverride: "aws-targetgroupbinding"
+
+service:
+  name: service-name
+  port: 80
+
+nodeSelector: {}
+
+targetGroupARN: tga
