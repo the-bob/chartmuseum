@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  api:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-05-08T09:32:51.308853375Z"
+    description: A Helm chart for Kubernetes
+    digest: 460521a0544c44e90f09f28344cb0d87c536ea5c5fb8a027d5983620e2294d6e
+    name: api
+    type: application
+    urls:
+    - https://github.com/the-bob/chartmuseum/releases/download/api-0.1.2/api-0.1.2.tgz
+    version: 0.1.2
+  aws-target-group-bindings:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-05-08T09:32:51.439047584Z"
+    description: Helm Charts for TargetGroupBindings
+    digest: 1be5bc646780e1b274797527609d9919af5e52ac21c8256329ab0b1aa871eb83
+    name: aws-target-group-bindings
+    type: application
+    urls:
+    - https://github.com/the-bob/chartmuseum/releases/download/aws-target-group-bindings-0.0.3/aws-target-group-bindings-0.0.3.tgz
+    version: 0.0.3
+generated: "2022-05-08T09:32:51.066012994Z"
