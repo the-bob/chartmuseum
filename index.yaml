@@ -3,6 +3,16 @@ entries:
   api:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-05-08T16:36:10.434848118Z"
+    description: A Helm chart for Kubernetes
+    digest: 4d32ceca5c177d2785bdf1621ee0546b87d181929ecb9804879d6dc6ed50c8b7
+    name: api
+    type: application
+    urls:
+    - https://github.com/the-bob/chartmuseum/releases/download/api-0.1.5/api-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-05-08T10:35:28.561385621Z"
     description: A Helm chart for Kubernetes
     digest: 55d10b4316f00c9d6a0b7a3ba569863485c8528422546a2cf5a28afe73115eee
