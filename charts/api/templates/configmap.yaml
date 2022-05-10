@@ -7,6 +7,6 @@ metadata:
     {{- include "api.labels" . | nindent 4 }}
 data:
     {{- range $k, $v := .Values.config.values }}
-    {{ $k }}: {{ $v }}
+    {{ $k }}: {{ $v | quote }}
     {{- end }}
 {{- end }}
