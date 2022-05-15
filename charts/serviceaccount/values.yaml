@@ -1,0 +1,7 @@
+
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  annotations: {}
+  name: "service-account"
