@@ -102,4 +102,15 @@ entries:
     urls:
     - https://github.com/the-bob/chartmuseum/releases/download/aws-target-group-bindings-0.0.3/aws-target-group-bindings-0.0.3.tgz
     version: 0.0.3
+  service-account:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-05-15T17:37:30.554830972Z"
+    description: A Helm chart for Kubernetes
+    digest: 622fb78af595f4e7e9f460f1d8710a8134f19b1cdc185246a43ece4878e93450
+    name: service-account
+    type: application
+    urls:
+    - https://github.com/the-bob/chartmuseum/releases/download/service-account-0.1.0/service-account-0.1.0.tgz
+    version: 0.1.0
 generated: "2022-05-08T09:32:51.066012994Z"
