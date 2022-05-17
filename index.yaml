@@ -94,6 +94,16 @@ entries:
   aws-target-group-bindings:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-05-17T19:52:59.348683417Z"
+    description: Helm Charts for TargetGroupBindings
+    digest: 138cc101e47bc3ed476786aea3a1a09737973e5373a5f6c5c0cd846a2afe0c42
+    name: aws-target-group-bindings
+    type: application
+    urls:
+    - https://github.com/the-bob/chartmuseum/releases/download/aws-target-group-bindings-0.0.5/aws-target-group-bindings-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-05-17T19:43:31.837085409Z"
     description: Helm Charts for TargetGroupBindings
     digest: 4b56535b9eda35c03e66a443a9ce48df23289cf57b686dff0de7d9b2a8b46a3e
