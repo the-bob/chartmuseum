@@ -1,7 +1,7 @@
 apiVersion: elbv2.k8s.aws/v1beta1
 kind: TargetGroupBinding
 metadata:
-  name: "{{ include "aws-target-group-bindings.fullname" . }}"
+  name: {{ .Values.name }}
   namespace: {{ .Values.namespace }}
 spec:
   {{- if .Values.service.name }}
