@@ -7,4 +7,5 @@ service:
 
 nodeSelector: {}
 
+namespace: default
 targetGroupARN: tga

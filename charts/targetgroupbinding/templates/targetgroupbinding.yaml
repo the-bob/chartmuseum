@@ -2,6 +2,7 @@ apiVersion: elbv2.k8s.aws/v1beta1
 kind: TargetGroupBinding
 metadata:
   name: "{{ include "aws-target-group-bindings.fullname" . }}"
+  namespace: {{ .Values.namespace }}
 spec:
   {{- if .Values.service.name }}
   serviceRef:
@@ -15,3 +16,4 @@ spec:
     {{- end }}
   {{- end }}
   targetGroupARN: {{ required "TargetGroup ARN is Required" .Values.targetGroupARN }}
+  targetType: {{ .Values.targetType | default "ip" }}
